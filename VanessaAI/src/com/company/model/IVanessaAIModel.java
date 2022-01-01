@@ -1,6 +1,6 @@
 package com.company.model;
 
-public interface IVaneesaAIModel {
+public interface IVanessaAIModel {
 
     public void loadHistory(String storageFile);
 

@@ -15,16 +15,16 @@ class UtilTest {
     public void testLoadWordsFromFile() throws IOException {
         ArrayList<String> test_source = Util.loadWordsFromFile("english-nouns.txt");
 
-        String test = "try";
+        String test = "test1";
 
         //assertTrue(Util.fastContains(test_source, test));
 
         long startTime = System.currentTimeMillis();
-        Boolean exitst = test_source.contains(test);
+        Boolean exist = test_source.contains(test);
         long endTime = System.currentTimeMillis();
         System.out.println("That took " + (endTime - startTime) + " milliseconds");
 
-        if (exitst) {
+        if (exist) {
             System.out.println("exists");
         }
     }
